@@ -2,7 +2,7 @@ using JuMP
 using Ipopt
 
 m = Model(Ipopt.Optimizer)
-@variable(m, 2<= x <=5)
+@variable(m, 2<= x <=4)
 @constraint(m, x^2 <= 9)
 @objective(m, Max, x^2)
 
